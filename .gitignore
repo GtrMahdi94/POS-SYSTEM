@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vite
+.vite/
+
+# Coverage
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Firebase
+.firebase/
+
+# React Native
+.expo/
