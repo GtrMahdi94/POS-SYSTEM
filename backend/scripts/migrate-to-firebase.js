@@ -49,10 +49,15 @@ async function main() {
 
   const lastInvoiceNumber = Math.max(0, ...Object.keys(invoiceMap).map((id) => Number(id) || 0));
 
+  const sellers = meta.sellers || [];
+  const categories = meta.categories || [];
+
   await update(ref(db), {
+    sellers,
+    categories,
     meta: {
-      sellers: meta.sellers || [],
-      categories: meta.categories || []
+      sellers,
+      categories
     },
     products: productsMap,
     invoices: invoiceMap,
