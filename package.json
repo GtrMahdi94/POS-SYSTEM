@@ -1,0 +1,31 @@
+{
+  "name": "almalaki-pos",
+  "version": "1.0.0",
+  "main": "electron-main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.almalaki.pos",
+    "productName": "الملكي POS",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "electron-main.js",
+      "frontend/**/*",
+      "backend/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "asar": false
+  }
+}
